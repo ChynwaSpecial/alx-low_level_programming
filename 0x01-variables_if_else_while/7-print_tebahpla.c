@@ -5,7 +5,7 @@
  * Result: 0 (Success)
  */
 
-int main(void) sucessful
+int main(void)
 {
 	char l;
 
