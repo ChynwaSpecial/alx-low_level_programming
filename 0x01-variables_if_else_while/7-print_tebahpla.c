@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: A program to print the lowercase alphabet in reverse order
- * Result: 0 (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
