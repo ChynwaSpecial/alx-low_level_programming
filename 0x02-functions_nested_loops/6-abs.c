@@ -12,7 +12,7 @@ int _abs(int k)
 }
 else
 {
-	return (-t);
+	return (-k);
 }
 
 }
