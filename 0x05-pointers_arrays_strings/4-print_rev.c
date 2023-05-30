@@ -14,10 +14,10 @@ void print_rev(char *s)
 		p++;
 		s++;
 	}
-	s--;
-	for (o = p; 0 > 0; o--)
+	for (o = p; o > 0; o--)
 	{
 		_putchar(*s);
+		s--;
 	}
 	_putchar('\n');
 }
