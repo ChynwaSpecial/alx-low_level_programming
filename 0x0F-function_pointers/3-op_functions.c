@@ -51,10 +51,10 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - Return the modulus of two numbers
+ * op_mod - Returns the remainder of the division of two numbers
  * @a: the first number
  * @b: the second number
- * Return: the modulus of a and b
+ * Return: the remainder of the division of a by b
  */
 int op_mod(int a, int b)
 {
