@@ -1,28 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include <string.h>
 /**
  * main - adds positive numbers
  * @argc: number of arguments
  * @argv: array that contains the arguments
  * Return: 0 (Success)
  */
-int main(int arg, char *argv[])
+int main(int argc, char *argv[])
 {
-	int a, b, add = 0;
+	int a;
+	unsigned int b, add = 0;
+	char *c;
 
-	for (a = 1; a < argv[a][b]; a++)
+	if (argc > 1)
 	{
-		for (b = 0; argv[a][b] != '\0'; b++)
+		for (a = 1; a < argc; a++)
 		{
-			if (!isdigit(argv[a][b]))
+			c = argv[a];
+			for (b = 0; b < strlen(c); b++)
 			{
-				printf("Error\n");
-				return (1);
+				if (c[b] < 48 || c[b] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
+			add += atoi(c);
+			c++;
 		}
-		add += atoi(argv[a]);
+		printf("%d\n", add);
 	}
-	printf("%d\n", add);
+	else
+	{
+		printf("0\n");
+	}
 	return (0);
 }
