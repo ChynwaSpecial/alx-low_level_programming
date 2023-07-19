@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -18,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 	for (i = 0; b[i] != '\0'; i++)
 		;
 
-	for ( i--, j = 1; i >= 0; i--, j *= 2)
+	for (i--, j = 1; i >= 0; i--, j *= 2)
 	{
 		if (b[i] != '0' && b[i] != '1')
 		{
