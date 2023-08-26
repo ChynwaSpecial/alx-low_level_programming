@@ -1,6 +1,5 @@
 #include <stdio.h>
-int main(void)
-{
+
 	int add(int i, int j)
 	{
 		return (i + j);
@@ -21,5 +20,4 @@ int main(void)
 	{
 		return (i % j);
 	}
-}
 
